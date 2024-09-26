@@ -16,13 +16,17 @@ export function AboutSection() {
                 {/* Right: About Text Section */}
                 <div className="ml-8 flex w-full flex-col space-y-4 text-left md:w-2/3">
                     <p className="text-neutral-600 dark:text-neutral-300 md:text-lg">
-                        I am a passionate Computer Science student with experience as an SDE intern, fitness athlete, and entrepreneur. My journey in
-                        software engineering started with building full-stack applications and learning industry practices. I strive to create impact
-                        through technology and am continuously improving my skills in Java, React, and Next.js, among others.
+                        Hi, I'm Mian Abdullah, an Undergraduate at DePauw University majoring in Computer Science with a minor in Philosophy. 
+                        I bring a wealth of diverse experiences from both the tech and leadership domains.
                     </p>
                     <p className="text-neutral-600 dark:text-neutral-300 md:text-lg">
-                        Currently, I am studying at DePauw University and balancing my academic responsibilities with my role as a Campus Resident
-                        Assistant. I love taking on new challenges and exploring creative solutions for real-world problems.
+                        Throughout my academic career, I have developed over 10 technical projects and earned awards like the Top 3 
+                        Medal at the International Youth Math Contest and several recognition in hackathons. In addition to my work as an SDE 
+                        intern, I am deeply passionate about applying technology to solve real-world problems, particularly through leadership 
+                        roles, whether it's promoting inclusive journalism or developing innovative tech solutions for businesses. My technical 
+                        expertise spans Java, Python, C++, TypeScript, and many other languages and frameworks such as React, Next.js, and Docker. 
+                        I have applied these skills in projects ranging from anomaly detection in IoT networks to developing AI task management tools 
+                        like Smart Calander, aimed at enhancing productivity.
                     </p>
                 </div>
             </div>
