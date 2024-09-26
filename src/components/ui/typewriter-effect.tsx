@@ -1,7 +1,8 @@
 'use client';
 
-import { motion, useAnimate } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+
 import { cn } from '@/lib/utils';
 
 export const TypewriterEffectSmooth = ({
@@ -31,10 +32,11 @@ export const TypewriterEffectSmooth = ({
             setCurrentIndex((prev) => (prev + 1) % words.length); // Loop over the words
         }
         const timeout = setTimeout(() => {
-            setShowText((prev) =>
-                deleting
-                    ? prev.slice(0, -1) // Delete characters
-                    : fullWord.slice(0, prev.length + 1) // Type characters
+            setShowText(
+                (prev) =>
+                    deleting
+                        ? prev.slice(0, -1) // Delete characters
+                        : fullWord.slice(0, prev.length + 1) // Type characters
             );
             setSpeed(deleting ? 50 : 100); // Speed for typing vs deleting
         }, speed);
@@ -50,8 +52,7 @@ export const TypewriterEffectSmooth = ({
         if (splitText.length === currentWordArray.length) {
             return (
                 <>
-                    {splitText.slice(0, -1).join(' ')}{' '}
-                    <span className="text-blue-500 dark:text-blue-500">{splitText.slice(-1)}</span>
+                    {splitText.slice(0, -1).join(' ')} <span className="text-blue-500 dark:text-blue-500">{splitText.slice(-1)}</span>
                 </>
             );
         }
@@ -67,10 +68,7 @@ export const TypewriterEffectSmooth = ({
                 whileInView={{ width: 'fit-content' }}
                 transition={{ duration: 2, ease: 'linear', delay: 1 }}
             >
-                <div
-                    className="lg:text:3xl text-xl font-bold xl:text-5xl"
-                    style={{ whiteSpace: 'nowrap' }}
-                >
+                <div className="lg:text:3xl text-xl font-bold xl:text-5xl" style={{ whiteSpace: 'nowrap' }}>
                     {getTextWithLastWordBlue()}
                 </div>
             </motion.div>

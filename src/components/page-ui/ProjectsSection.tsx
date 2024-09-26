@@ -22,7 +22,7 @@ const products = [
         link: 'https://github.com/PennApps-DPUSchedulePomodoro/ScheduleMana_Pomodoro/tree/master',
         thumbnail: '/projects/smart-scedule.jpg'
     },
-/*
+    /*
     {
         title: 'Google Clone',
         link: 'https://github.com/MagicPojska/gulululgl-search-clone',

@@ -1,7 +1,7 @@
 'use client';
-import { GitHubLogoIcon, LinkedInLogoIcon, VercelLogoIcon } from '@radix-ui/react-icons';
-import { SiGmail } from 'react-icons/si'; // Importing Gmail icon
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import React, { useState } from 'react';
+import { SiGmail } from 'react-icons/si'; // Importing Gmail icon
 
 import { ModeToggle } from '@/components/page-ui/ModeToggle';
 import { HoveredLink, Menu, MenuItem } from '@/components/ui/navbar-menu';
@@ -39,7 +39,7 @@ function NavbarComponent({ className }: { className?: string }) {
                             <LinkedInLogoIcon className="mr-1" /> Linkedin
                         </HoveredLink>
                         <HoveredLink href="mailto:abdullahmian549@gmail.com" rel="noopener noreferrer" target="_blank">
-                        <SiGmail className="mr-1" /> Gmail
+                            <SiGmail className="mr-1" /> Gmail
                         </HoveredLink>
                     </div>
                 </MenuItem>

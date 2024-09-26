@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaJava, FaPython, FaJs, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiTypescript, SiPostgresql, SiMongodb, SiMysql, SiDocker, SiGnubash } from 'react-icons/si';
+import { FaCss3Alt, FaHtml5, FaJava, FaPython } from 'react-icons/fa';
+import { SiMongodb, SiMysql, SiTypescript } from 'react-icons/si';
 import { TbBrandNextjs, TbBrandReact } from 'react-icons/tb';
+
 import { EvervaultCard, Icon } from '@/components/ui/evervault-card';
 
 export function SkillsSection() {
@@ -46,12 +47,12 @@ const skills = [
         title: 'TypeScript',
         link: 'https://www.typescriptlang.org/',
         icon: <SiTypescript />
-    },/*
+    } /*
     {
         title: 'JavaScript',
         link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         icon: <FaJs />
-    },*/
+    },*/,
     {
         title: 'HTML',
         link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
@@ -71,7 +72,7 @@ const skills = [
         title: 'Next.js',
         link: 'https://nextjs.org/',
         icon: <TbBrandNextjs />
-    },/*
+    } /*
     {
         title: 'Docker',
         link: 'https://www.docker.com/',
@@ -81,7 +82,7 @@ const skills = [
         title: 'PostgreSQL',
         link: 'https://www.postgresql.org',
         icon: <SiPostgresql />
-    },*/
+    },*/,
     {
         title: 'MongoDB',
         link: 'https://www.mongodb.com/',

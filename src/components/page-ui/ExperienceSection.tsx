@@ -30,11 +30,8 @@ const experience = [
         title: 'Tenzer Technology Center',
         description: (
             <ul className="list-disc">
-                <li>
-                    Spent 10 hours/week for research and self-study using R Studio, Tableau, Python, ArcGIS for data analysis </li>
-                <li>
-                    Applied responsive design with VR integration and multimedia optimizations including 3D modeling for 8+ projects
-                </li>
+                <li>Spent 10 hours/week for research and self-study using R Studio, Tableau, Python, ArcGIS for data analysis </li>
+                <li>Applied responsive design with VR integration and multimedia optimizations including 3D modeling for 8+ projects</li>
             </ul>
         ),
         badge: 'Apprentice/Aug 2023 - Present'
@@ -43,12 +40,8 @@ const experience = [
         title: 'DePauw University',
         description: (
             <ul className="list-disc">
-                <li>
-                    Enhanced learning for 50+ students in Intro to CS & Data Structures by providing hands-on guidance.
-                </li>
-                <li>
-                    Assisted 3 faculty members to design personalized resources, boosting student performance through targeted support.
-                </li>
+                <li>Enhanced learning for 50+ students in Intro to CS & Data Structures by providing hands-on guidance.</li>
+                <li>Assisted 3 faculty members to design personalized resources, boosting student performance through targeted support.</li>
             </ul>
         ),
         badge: 'SDE Teacher & Lab Assistant/Aug 2024 - Present'
@@ -68,9 +61,7 @@ const experience = [
         description: (
             <ul className="list-disc">
                 <li>Journalized for marginalized groups, especially victims of domestic violence, reaching 5k+ people in just a month</li>
-                <li>
-                    Raised PKR 500K+ for journalism and got recognized by Nation's Largest NGO (Depilex Smileagain Foundation)
-                </li>
+                <li>Raised PKR 500K+ for journalism and got recognized by Nation's Largest NGO (Depilex Smileagain Foundation)</li>
             </ul>
         ),
         badge: 'President, Co-Funder/Jun 2022 - May 2024'
