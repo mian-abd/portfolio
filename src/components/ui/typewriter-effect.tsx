@@ -40,9 +40,10 @@ export const TypewriterEffectSmooth = ({
             );
             setSpeed(deleting ? 50 : 100); // Speed for typing vs deleting
         }, speed);
-
+    
         return () => clearTimeout(timeout);
-    }, [showText, deleting, speed]);
+    }, [showText, deleting, speed, fullWord, words.length]);
+    
 
     const getTextWithLastWordBlue = () => {
         // Split the current visible text into words

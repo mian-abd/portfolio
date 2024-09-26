@@ -61,7 +61,7 @@ const experience = [
         description: (
             <ul className="list-disc">
                 <li>Journalized for marginalized groups, especially victims of domestic violence, reaching 5k+ people in just a month</li>
-                <li>Raised PKR 500K+ for journalism and got recognized by Nation's Largest NGO (Depilex Smileagain Foundation)</li>
+                <li>Raised PKR 500K+ for journalism and got recognized by Nation&apos;s Largest NGO (Depilex Smileagain Foundation)</li>
             </ul>
         ),
         badge: 'President, Co-Funder/Jun 2022 - May 2024'
