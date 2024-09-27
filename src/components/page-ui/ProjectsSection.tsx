@@ -47,7 +47,7 @@ const products = [
     {
         title: 'Portfolio V2',
         link: 'https://safetpojskic.com',
-        thumbnail: '/projects/portfoliov2.png'
+        thumbnail: './portfolio.png'
     },
     {
         title: 'Distributed Anomaly Detection Using ML Techniques',
