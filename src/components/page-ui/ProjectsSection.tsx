@@ -46,7 +46,7 @@ const products = [
     },
     {
         title: 'Portfolio V2',
-        link: 'https://mian-abdullah.com',
+        link: 'https://www.mian-abdullah.com/',
         thumbnail: './portfolio.png'
     },
     {
