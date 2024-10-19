@@ -46,7 +46,7 @@ const products = [
     },
     {
         title: 'Portfolio V2',
-        link: 'https://safetpojskic.com',
+        link: 'https://mian-abdullah.com',
         thumbnail: './portfolio.png'
     },
     {
