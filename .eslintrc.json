@@ -7,46 +7,29 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "endOfLine": "auto"
-      }
-    ]
+    "prettier/prettier": "off"
   },
   "overrides": [
     // Configuration for TypeScript files
     {
-      "files": [ "**/*.ts", "**/*.tsx" ],
+      "files": ["**/*.ts", "**/*.tsx"],
       "plugins": [
         "@typescript-eslint",
         "simple-import-sort",
         "tailwindcss",
         "unused-imports"
       ],
-      "extends": [ "plugin:tailwindcss/recommended" ],
+      "extends": ["plugin:tailwindcss/recommended"],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": "./tsconfig.json"
       },
       "rules": {
-        "prettier/prettier": [
+        "prettier/prettier": "off",
+        "@typescript-eslint/no-unused-vars": [
           "error",
-          {
-            "arrowParens": "always",
-            "bracketSpacing": true,
-            "endOfLine": "lf",
-            "jsxBracketSameLine": false,
-            "jsxSingleQuote": false,
-            "printWidth": 150,
-            "semi": true,
-            "singleQuote": true,
-            "tabWidth": 4,
-            "trailingComma": "none"
-          }
+          { "argsIgnorePattern": "^_" }
         ],
-        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" } ],
         "@typescript-eslint/no-explicit-any": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
         "react/react-in-jsx-scope": "off",

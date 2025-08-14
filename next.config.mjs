@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['aceternity.com', 'images.unsplash.com', 'assets.aceternity.com'],
+    domains: ["aceternity.com", "images.unsplash.com", "assets.aceternity.com"],
   },
   // webpack: (config, {isServer}) => {
   //   if (!isServer) {
@@ -14,7 +14,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-
-
-
-
