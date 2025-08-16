@@ -6,7 +6,7 @@ import { FaExternalLinkAlt, FaGithub, FaPython, FaReact } from "react-icons/fa";
 import { SiFastapi, SiTensorflow } from "react-icons/si";
 
 export function ProjectsSection() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const [_hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
     <section className="relative w-full bg-white py-20 dark:bg-black">

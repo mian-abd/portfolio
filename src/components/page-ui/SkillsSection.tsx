@@ -44,7 +44,7 @@ export function SkillsSection() {
       <div className="mx-auto max-w-[min(92vw,1400px)] px-3 sm:px-4 lg:px-8">
         <h1
           id="skills"
-          className="pb-12 pt-12 text-center text-4xl font-bold dark:text-white md:pt-24 md:text-7xl lg:text-8xl"
+          className="py-12 text-center text-4xl font-bold dark:text-white md:pt-24 md:text-7xl lg:text-8xl"
         >
           Skills
         </h1>
@@ -68,16 +68,16 @@ export function SkillsSection() {
                       onMouseEnter={() => setHoveredSkill(globalIndex)}
                       onMouseLeave={() => setHoveredSkill(null)}
                     >
-                      <div className="mb-2 text-2xl md:text-3xl text-neutral-700 dark:text-neutral-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                      <div className="mb-2 text-2xl text-neutral-700 transition-colors duration-300 group-hover:text-blue-600 dark:text-neutral-300 dark:group-hover:text-blue-400 md:text-3xl">
                         {skill.icon}
                       </div>
-                      <span className="text-xs font-medium text-center text-neutral-600 dark:text-neutral-400 group-hover:text-neutral-800 dark:group-hover:text-neutral-200 transition-colors duration-300">
+                      <span className="text-center text-xs font-medium text-neutral-600 transition-colors duration-300 group-hover:text-neutral-800 dark:text-neutral-400 dark:group-hover:text-neutral-200">
                         {skill.title}
                       </span>
                       
                       {/* Hover tooltip */}
                       {hoveredSkill === globalIndex && (
-                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap z-10">
+                        <div className="absolute -top-10 left-1/2 z-10 -translate-x-1/2 whitespace-nowrap rounded bg-black px-2 py-1 text-xs text-white">
                           {skill.title}
                         </div>
                       )}
