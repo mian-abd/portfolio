@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
   FaAws,
   FaCss3Alt,
@@ -34,7 +36,6 @@ import {
   SiTypescript,
   SiVisualbasic,
 } from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 export function SkillsSection() {
   const [hoveredSkill, setHoveredSkill] = useState<number | null>(null);

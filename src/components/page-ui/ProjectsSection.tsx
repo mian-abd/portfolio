@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { FaExternalLinkAlt, FaGithub, FaPython, FaReact } from "react-icons/fa";
 import { SiFastapi, SiTensorflow } from "react-icons/si";
 
 export function ProjectsSection() {
-  const [_hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
     <section className="relative w-full bg-white py-20 dark:bg-black">
@@ -23,8 +22,7 @@ export function ProjectsSection() {
             <div
               key={index}
               className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-200 p-6 shadow-lg transition-all duration-300 hover:shadow-xl dark:from-neutral-800 dark:to-neutral-900"
-              onMouseEnter={() => setHoveredProject(index)}
-              onMouseLeave={() => setHoveredProject(null)}
+
             >
               {/* Project Icon */}
               <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-white p-2 shadow-md dark:bg-neutral-700">
