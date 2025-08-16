@@ -5,7 +5,6 @@ import Link from "next/link";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Button } from "@/components/ui/button";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
-import { text } from "stream/consumers";
 
 const words = [
   { text: "Under-Graduate CS Student" },
