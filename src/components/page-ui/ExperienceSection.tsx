@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from "react";
+
 import Image from "next/image";
+import React, { useState } from "react";
 
 export function ExperienceSection() {
   const [expandedCard, setExpandedCard] = useState<number | null>(null);

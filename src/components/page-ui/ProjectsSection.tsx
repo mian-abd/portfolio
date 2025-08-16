@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
 import Link from "next/link";
-import { FaGithub, FaExternalLinkAlt, FaReact, FaPython } from "react-icons/fa";
-import { SiTensorflow, SiFastapi } from "react-icons/si";
+import React, { useState } from "react";
+import { FaExternalLinkAlt, FaGithub, FaPython, FaReact } from "react-icons/fa";
+import { SiFastapi, SiTensorflow } from "react-icons/si";
 
 export function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);

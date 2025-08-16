@@ -2,13 +2,37 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import { 
-  FaCss3Alt, FaHtml5, FaJava, FaPython, FaJs, FaSwift, FaDocker, FaGitAlt, FaAws, FaReact, FaNodeJs
+import {
+  FaAws,
+  FaCss3Alt,
+  FaDocker,
+  FaGitAlt,
+  FaHtml5,
+  FaJava,
+  FaJs,
+  FaNodeJs,
+  FaPython,
+  FaReact,
+  FaSwift,
 } from "react-icons/fa";
-import { 
-  SiMongodb, SiMysql, SiTypescript, SiKotlin, SiPostgresql, SiFirebase, SiMicrosoftazure, 
-  SiNextdotjs, SiTensorflow, SiNumpy, SiTableau, SiOpenapiinitiative, SiExpo, SiTailwindcss,
-  SiPlotly, SiScikitlearn, SiFastapi, SiCplusplus, SiVisualbasic
+import {
+  SiCplusplus,
+  SiExpo,
+  SiFastapi,
+  SiFirebase,
+  SiKotlin,
+  SiMicrosoftazure,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNumpy,
+  SiOpenapiinitiative,
+  SiPlotly,
+  SiTableau,
+  SiTailwindcss,
+  SiTensorflow,
+  SiTypescript,
+  SiVisualbasic,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
