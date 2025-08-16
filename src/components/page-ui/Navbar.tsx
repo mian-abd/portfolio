@@ -27,8 +27,8 @@ function NavbarComponent({ className }: { className?: string }) {
             <HoveredLink href="#landing-page">Landing Page</HoveredLink>
             <HoveredLink href="#about-me">About Me</HoveredLink>
             <HoveredLink href="#experience">Experience</HoveredLink>
-            <HoveredLink href="#skills">Skills</HoveredLink>
             <HoveredLink href="#projects">Projects</HoveredLink>
+            <HoveredLink href="#skills">Skills</HoveredLink>
             <HoveredLink href="#contact-me">Contact Me</HoveredLink>
           </div>
         </MenuItem>

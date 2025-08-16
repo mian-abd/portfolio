@@ -11,8 +11,8 @@ export default function Home() {
       <LandingPage />
       <AboutSection />
       <ExperienceSection />
-      <SkillsSection />
       <ProjectsSection />
+      <SkillsSection />
       <ContactMeForm />
     </main>
   );
