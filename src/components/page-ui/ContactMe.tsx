@@ -18,6 +18,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { FaLinkedin, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 export const contactFormSchema = z.object({
   name: z
@@ -130,6 +131,55 @@ export function ContactMeForm() {
           </Button>
         </form>
       </Form>
+
+      {/* Social Media Links */}
+      <div className="mt-12">
+        {/* Full-width separator line */}
+        <div className="w-full border-t border-neutral-200 dark:border-neutral-700 mb-8"></div>
+        
+        <h2 className="mb-8 text-center text-xl font-semibold text-neutral-800 dark:text-white">
+          Connect with me
+        </h2>
+        
+        {/* Evenly spaced social links */}
+        <div className="flex justify-center space-x-8 md:space-x-12">
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/mian-abd/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center space-x-3 rounded-lg border-2 border-neutral-300 bg-transparent px-6 py-3 text-neutral-700 transition-all duration-300 hover:scale-105 hover:border-neutral-400 hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-600 dark:text-neutral-300 dark:hover:border-neutral-500 dark:hover:bg-neutral-800"
+          >
+            <FaLinkedin className="text-xl text-blue-600 dark:text-blue-400" />
+            <span className="font-medium">LinkedIn</span>
+            <FaExternalLinkAlt className="text-xs opacity-60" />
+          </a>
+
+          {/* GitHub */}
+          <a
+            href="https://github.com/mian-abd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center space-x-3 rounded-lg border-2 border-neutral-300 bg-transparent px-6 py-3 text-neutral-700 transition-all duration-300 hover:scale-105 hover:border-neutral-400 hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-600 dark:text-neutral-300 dark:hover:border-neutral-500 dark:hover:bg-neutral-800"
+          >
+            <FaGithub className="text-xl text-neutral-800 dark:text-neutral-200" />
+            <span className="font-medium">GitHub</span>
+            <FaExternalLinkAlt className="text-xs opacity-60" />
+          </a>
+
+          {/* Website */}
+          <a
+            href="https://www.mian-abdullah.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center space-x-3 rounded-lg border-2 border-neutral-300 bg-transparent px-6 py-3 text-neutral-700 transition-all duration-300 hover:scale-105 hover:border-neutral-400 hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-600 dark:text-neutral-300 dark:hover:border-neutral-500 dark:hover:bg-neutral-800"
+          >
+            <FaExternalLinkAlt className="text-xl text-green-600 dark:text-green-400" />
+            <span className="font-medium">Website</span>
+            <FaExternalLinkAlt className="text-xs opacity-60" />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
