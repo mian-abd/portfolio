@@ -38,7 +38,7 @@ const products = [
         link: '',
         thumbnail: '/projects/dresscode.png'
     },
-*/
+
   {
     title: "Inventory Geek",
     link: "https://www.figma.com/proto/U7lHZzytjZOCjOMZkHxi7t/Untitled?type=design&node-id=0-4389&t=OKhCH6AZkTqTo4cp-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=0%3A4709&show-proto-sidebar=1",
@@ -49,9 +49,10 @@ const products = [
     link: "https://www.mian-abdullah.com/",
     thumbnail: "/portfolio.png",
   },
+  */
   {
     title: "Distributed Anomaly Detection Using ML Techniques",
-    link: "https://github.com/EmmanuelA74/Distributed-Anomaly-Detection-Using-Machine-Learning-Techniques/tree/main",
+    link: "https://github.com/mian-abd/Distributed-Anomaly-Detection-Using-Machine-Learning-Techniques",
     thumbnail: "/projects/iot.jpg",
   },
 ];

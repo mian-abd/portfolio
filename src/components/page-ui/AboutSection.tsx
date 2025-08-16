@@ -1,51 +1,137 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export function AboutSection() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMousePosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
   return (
     <section
       id="about-me"
-      className="relative w-full flex-col justify-center bg-white py-16 dark:bg-black"
+      className="relative w-full flex-col justify-center bg-white py-20 dark:bg-black"
     >
-      <h1 className="mx-auto max-w-5xl px-8 pb-8 pt-20 text-2xl font-bold dark:text-white md:pt-32 md:text-7xl">
-        About Me
-      </h1>
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between space-y-8 px-8 md:flex-row md:space-y-0">
-        {/* Left: Image Section */}
-        <div className="w-full shrink-0 md:w-1/3">
-          <Image
-            src="/projects/me.png"
-            alt="Mian Abdullah"
-            width={400}
-            height={400}
-            className="rounded-lg object-cover"
-          />
-        </div>
+      <div className="mx-auto max-w-7xl px-8">
+        <h1 className="pb-12 pt-12 text-center text-4xl font-bold dark:text-white md:pt-24 md:text-7xl lg:text-8xl">
+          About Me
+        </h1>
 
-        {/* Right: About Text Section */}
-        <div className="ml-8 flex w-full flex-col space-y-4 text-left md:w-2/3">
-          <p className="text-neutral-600 dark:text-neutral-300 md:text-lg">
-            Hi, I&apos;m Mian Abdullah, an Undergraduate at DePauw University
-            majoring in Computer Science with a minor in Philosophy. I bring a
-            wealth of diverse experiences from both the tech and leadership
-            domains.
-          </p>
-          <p className="text-neutral-600 dark:text-neutral-300 md:text-lg">
-            Throughout my academic career, I have developed over 10 technical
-            projects and earned awards like the Top 3 Medal at the International
-            Youth Math Contest and several recognitions in hackathons. In
-            addition to my work as an SDE intern, I am deeply passionate about
-            applying technology to solve real-world problems, particularly
-            through leadership roles, whether it&apos;s promoting inclusive
-            journalism or developing innovative tech solutions for businesses.
-            My technical expertise spans Java, Python, C++, TypeScript, and many
-            other languages and frameworks such as React, Next.js, and Docker. I
-            have applied these skills in projects ranging from anomaly detection
-            in IoT networks to developing AI task management tools like Smart
-            Calendar, aimed at enhancing productivity.
-          </p>
+        {/* TOP-ALIGN COLUMNS ON DESKTOP */}
+        <div className="flex flex-col md:flex-row md:items-start gap-12 md:gap-16 lg:gap-20">
+          {/* Left: Image Section */}
+                     <div className="flex w-full justify-center md:w-1/2 lg:w-2/5 self-start">
+             {/* Square wrapper so we control crop; removed my-auto */}
+             <div 
+               className="relative aspect-square w-full max-w-[550px] cursor-pointer"
+               onMouseMove={handleMouseMove}
+               onMouseEnter={() => setIsHovering(true)}
+               onMouseLeave={() => setIsHovering(false)}
+               onClick={() => window.open('https://www.linkedin.com/in/mian-abd/', '_blank')}
+             >
+               <Image
+                 src="/projects/me.png"
+                 alt="Mian Abdullah"
+                 fill
+                 sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
+                 className="rounded-2xl object-cover object-top shadow-2xl transition-transform duration-300 hover:scale-105"
+                 priority
+               />
+               <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-t from-black/20 to-transparent" />
+               
+               {/* LinkedIn Button that follows cursor */}
+               {isHovering && (
+                 <div
+                   className="absolute z-10 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-200"
+                   style={{
+                     left: mousePosition.x,
+                     top: mousePosition.y,
+                   }}
+                 >
+                   <div className="flex items-center space-x-2 rounded-lg bg-black px-4 py-2 text-sm font-medium text-white shadow-lg whitespace-nowrap">
+                     <span>View LinkedIn Profile</span>
+                     <svg 
+                       className="h-4 w-4 flex-shrink-0" 
+                       fill="none" 
+                       stroke="currentColor" 
+                       viewBox="0 0 24 24"
+                     >
+                       <path 
+                         strokeLinecap="round" 
+                         strokeLinejoin="round" 
+                         strokeWidth={2} 
+                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                       />
+                     </svg>
+                   </div>
+                 </div>
+               )}
+             </div>
+           </div>
+
+          {/* Right: About Text Section */}
+          <div className="flex w-full flex-col space-y-6 text-left md:w-1/2 lg:w-3/5 self-start">
+            <div className="space-y-6">
+              <p className="text-lg font-semibold text-neutral-700 dark:text-neutral-200 md:text-xl">
+                <strong>Hey, thanks for stopping by my portfolio!</strong>
+              </p>
+
+              <p className="text-lg leading-relaxed text-neutral-600 dark:text-neutral-300 md:text-xl">
+                I&apos;m <span className="font-semibold text-neutral-800 dark:text-neutral-100">Mian Abdullah</span>, a junior at DePauw University pursuing a Bachelor&apos;s in Computer Science & Philosophy.
+              </p>
+
+              <p className="text-base leading-relaxed text-neutral-600 dark:text-neutral-300 md:text-lg">
+                I&apos;m a first-generation learner originally from Lahore, Pakistan. Over the years, I&apos;ve completed <span className="font-bold text-blue-600 dark:text-blue-400">3+ internships</span> in full-stack engineering and AI/ML, taught <span className="font-bold text-blue-600 dark:text-blue-400">300+ students</span> coding and robotics, built <span className="font-bold text-blue-600 dark:text-blue-400">30+ projects</span> ranging from GPT-powered chatbots and advanced ML models to full-stack web and mobile apps, and even founded an <span className="font-bold text-blue-600 dark:text-blue-400">AI startup</span>. On campus, I&apos;ve held <span className="font-bold text-blue-600 dark:text-blue-400">leadership roles in 6+ clubs and organizations</span>.
+              </p>
+
+              <p className="text-base leading-relaxed text-neutral-600 dark:text-neutral-300 md:text-lg">
+                Outside the tech world, you&apos;ll often find me on the soccer field, at a table tennis match, or engaging in spirited debate—especially on topics that bridge <span className="font-semibold text-neutral-800 dark:text-neutral-200">computer science, logic, and finance</span>.
+              </p>
+
+              <p className="text-base leading-relaxed text-neutral-600 dark:text-neutral-300 md:text-lg">
+                I believe in creating spaces where collaboration, curiosity, and innovation thrive. Would love to connect, exchange ideas, and explore potential collaborations.
+              </p>
+            </div>
+
+            {/* Contact Info */}
+            <div className="rounded-lg bg-neutral-50 p-6 dark:bg-neutral-900/50">
+              <div className="flex flex-col space-y-3 text-center md:flex-row md:items-center md:justify-center md:space-x-8 md:space-y-0">
+                <a
+                  href="mailto:abdullahmian549@gmail.com"
+                  className="flex items-center justify-center space-x-2 text-blue-600 transition-colors hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  <span className="text-lg">📧</span>
+                  <span className="text-sm font-medium md:text-base">abdullahmian549@gmail.com</span>
+                </a>
+                <span className="hidden text-neutral-400 md:inline">•</span>
+                <a
+                  href="tel:7657122522"
+                  className="flex items-center justify-center space-x-2 text-blue-600 transition-colors hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  <span className="text-lg">📞</span>
+                  <span className="text-sm font-medium md:text-base">(765) 712-2522</span>
+                </a>
+              </div>
+            </div>
+
+            {/* CTA Button */}
+            <div className="pt-6 text-center">
+              <a
+                href="#contact-me"
+                className="inline-block transform rounded-lg border-2 border-neutral-300 bg-transparent px-8 py-4 text-xl font-bold text-neutral-700 transition-all duration-300 ease-in-out hover:scale-105 hover:border-neutral-400 hover:bg-neutral-50 hover:shadow-lg dark:border-neutral-600 dark:text-neutral-300 dark:hover:border-neutral-500 dark:hover:bg-neutral-800"
+              >
+                Let&apos;s Get In Touch!
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
