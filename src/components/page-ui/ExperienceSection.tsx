@@ -99,27 +99,49 @@ const experience = [
     ]
   },
   {
+    title: "Co-Founder & CTO",
+    company: "Plutores",
+    location: "Austin, TX, USA",
+    duration: "July 2025 - Present",
+    logo: "/logos/plutores.png",
+    achievements: [
+      "Designed <strong>Web3 mortgage marketplace</strong> for banks and lenders to trade tokenized loans across institutions on blockchain",
+      "Reduced real estate title insurance processing time by <strong>73%</strong> through MCP multi-agent LangGraph RAG pipelines",
+      "Secured pre-launch adoption by <strong>8 corporate clients</strong> across 19 U.S. offices, overseeing a 3-engineer team"
+    ]
+  },
+  {
+    title: "Software Engineering Experience (Forage)",
+    company: "JP Morgan Chase",
+    location: "Remote",
+    duration: "Sep 2025",
+    logo: "/logos/jpmorgan.png",
+    achievements: [
+      "Built <strong>Spring</strong> system with <strong>Apache Kafka</strong>, H2 database, and REST APIs to simulate trading functionality"
+    ]
+  },
+  {
     title: "Software Development Engineering Instructor",
     company: "iD Tech",
     location: "Texas, USA",
     duration: "May 2025 - Aug 2025",
     logo: "/logos/id tech.png",
     achievements: [
-      "Taught <strong>312 students</strong> Python, AI/ML, C++, and VEX robotics with TensorFlow via hands-on projects",
-      "Designed interactive coding/robotics projects, achieving <strong>97% student satisfaction</strong> and measurable proficiency gains",
-      "Guided students in building AI chatbots with <strong>OpenAI APIs</strong>, cutting debugging time by <strong>40%</strong> through enhanced skills"
+      "Taught <strong>312 students</strong> Python, AI/ML, C++, and VEX robotics using hands-on TensorFlow projects",
+      "Drove <strong>63% average grade increase</strong>, with clear gains in efficiency, model training accuracy, and deployment skills",
+      "Accelerated project development <strong>47%</strong> by guiding learners to build ML models and AI chatbots using OpenAI APIs"
     ]
   },
   {
-    title: "Full Stack Engineer Intern",
+    title: "Machine Learning Intern",
     company: "Legislative Intelligence",
     location: "Noblesville, IN, USA",
     duration: "Feb 2025 - May 2025",
     logo: "/logos/Legislative Intelligence.jpeg",
     achievements: [
-      "Collaborated on end-to-end scalable data backend powering <strong>GPT chatbot</strong> for bill search, summarization, & vote tracking",
-      "Automated targeted web scraping pipeline for MI, IL, IN bills with OpenState, lxml, and regex; <strong>78% faster</strong> data sourcing",
-      "Validated data integrity, maintaining near <strong>0% failure</strong> rates in structured and unstructured text ingestion in AI ChatBot"
+      "Built scalable <strong>GPT chatbot backend</strong> that processed <strong>23k legislative records</strong> for search, summarization, and vote tracking",
+      "Delivered <strong>78% faster</strong> data sourcing by automating web scraping for MI, IL, IN bills using OpenState, lxml, regex",
+      "Validated bill data integrity with <strong>&lt;0.5% ingestion failures</strong>, enabling consistent GPT outputs vs. baseline NLP models"
     ]
   },
   {
@@ -129,8 +151,8 @@ const experience = [
     duration: "Aug 2024 - Dec 2025",
     logo: "/logos/Depauw University.jpeg",
     achievements: [
-      "Amplified learning outcomes for <strong>93 students</strong> in Data Structures & Object Oriented Programming by providing tailored hands-on guidance",
-      "Assisted <strong>3 faculty members</strong> to design bonus resources, boosting student performance by <strong>14%</strong> through targeted support"
+      "Amplified learning outcomes for <strong>93 students</strong> in Data Structures & Object Oriented by providing tailored guidance",
+      "Assisted <strong>3 faculty members</strong> in designing bonus resources, boosting student performance by <strong>14%</strong> across assessments"
     ]
   },
   {
