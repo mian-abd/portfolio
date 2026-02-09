@@ -99,28 +99,6 @@ const experience = [
     ]
   },
   {
-    title: "Co-Founder & CTO",
-    company: "Plutores",
-    location: "Austin, TX, USA",
-    duration: "July 2025 - Present",
-    logo: "/logos/plutores.png",
-    achievements: [
-      "Designed <strong>Web3 mortgage marketplace</strong> for banks and lenders to trade tokenized loans across institutions on blockchain",
-      "Reduced real estate title insurance processing time by <strong>73%</strong> through MCP multi-agent LangGraph RAG pipelines",
-      "Secured pre-launch adoption by <strong>8 corporate clients</strong> across 19 U.S. offices, overseeing a 3-engineer team"
-    ]
-  },
-  {
-    title: "Software Engineering Experience (Forage)",
-    company: "JP Morgan Chase",
-    location: "Remote",
-    duration: "Sep 2025",
-    logo: "/logos/jpmorgan.png",
-    achievements: [
-      "Built <strong>Spring</strong> system with <strong>Apache Kafka</strong>, H2 database, and REST APIs to simulate trading functionality"
-    ]
-  },
-  {
     title: "Software Development Engineering Instructor",
     company: "iD Tech",
     location: "Texas, USA",
