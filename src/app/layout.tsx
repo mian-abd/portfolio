@@ -11,7 +11,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://safetpojskic.com"),
+  metadataBase: new URL("https://www.mian-abdullah.com"),
   title: "Mian Abdullah",
   description: "Welcome to my personal portfolio!",
   applicationName: "Mian Abdullah",

@@ -7,11 +7,13 @@ import { Button } from "@/components/ui/button";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 
 const words = [
-  { text: "Under-Graduate CS Student" },
-  { text: "Ex Software Development Engineering Instructor iD Tech" },
-  { text: "Ex SDE Intern Tenzer Technology Center" },
-  { text: "Ex SDE Apprentice Websitech Community Prvt. Limited" },
-  { text: "SDE Student Teacher & Lab Assistant" },
+  { text: "Strategy & AI Intern @ BCforward" },
+  { text: "Co-Founder & CTO @ Plutores" },
+  { text: "Ex SDE Instructor @ iD Tech" },
+  { text: "Ex ML Intern @ Legislative Intelligence" },
+  { text: "SDE Teacher & Lab Assistant @ DePauw" },
+  { text: "Ex Apprentice @ Tenzer Technology Center" },
+  { text: "CS & Philosophy @ DePauw" },
   { text: "Fitness Athlete" },
   { text: "Entrepreneur" },
   { text: "Campus Resident Assistant" },

@@ -88,13 +88,24 @@ export function ExperienceSection() {
 
 const experience = [
   {
+    title: "Strategy & AI Intern",
+    company: "BCforward",
+    location: "Indianapolis, IN, USA",
+    duration: "Dec 2025 - Present",
+    logo: "/logos/bcforward.png",
+    achievements: [
+      "Built <strong>Salesforce-native agentforce-assisted OKR system</strong> for C-suite to 342 employees, standardizing quarterly planning",
+      "Designed exec dashboard with <strong>Jira & OKR data</strong> to surface <strong>~$300M in sales</strong>, replacing fragmented reporting workflows"
+    ]
+  },
+  {
     title: "Software Development Engineering Instructor",
     company: "iD Tech",
     location: "Texas, USA",
-    duration: "May 2025 - Present",
+    duration: "May 2025 - Aug 2025",
     logo: "/logos/id tech.png",
     achievements: [
-      "Taught <strong>300+ students</strong> Python, AI machine learning, C++ and VEX robotics, with TensorFlow via hands-on models",
+      "Taught <strong>312 students</strong> Python, AI/ML, C++, and VEX robotics with TensorFlow via hands-on projects",
       "Designed interactive coding/robotics projects, achieving <strong>97% student satisfaction</strong> and measurable proficiency gains",
       "Guided students in building AI chatbots with <strong>OpenAI APIs</strong>, cutting debugging time by <strong>40%</strong> through enhanced skills"
     ]
@@ -115,10 +126,10 @@ const experience = [
     title: "SDE Teacher & Lab Assistant",
     company: "DePauw University",
     location: "Greencastle, IN, USA",
-    duration: "Aug 2024 - Present",
+    duration: "Aug 2024 - Dec 2025",
     logo: "/logos/Depauw University.jpeg",
     achievements: [
-      "Amplified learning outcomes for <strong>90+ students</strong> in Intro to CS & Data Structures by providing tailored hands-on guidance",
+      "Amplified learning outcomes for <strong>93 students</strong> in Data Structures & Object Oriented Programming by providing tailored hands-on guidance",
       "Assisted <strong>3 faculty members</strong> to design bonus resources, boosting student performance by <strong>14%</strong> through targeted support"
     ]
   },
